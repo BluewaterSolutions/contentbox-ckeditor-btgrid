@@ -1,6 +1,6 @@
 {
     "name":"contentbox-ckeditor-btgrid",
-    "version":"0.0.1",
+    "version":"0.0.2",
     "author":"",
     "location":"BluewaterSolutions/contentbox-ckeditor-btgrid#v0.0.0",
     "homepage":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
@@ -15,6 +15,7 @@
     "description":"Add btgrid plugin to ckeditor used in ContentBox",
     "type":"contentbox-modules",
     "dependencies":{
+        "kaido24/btgrid":"*"
         
     },
     "devDependencies":{
@@ -22,6 +23,7 @@
         "testbox":"^2.4.0+80"
     },
     "installPaths":{
+        "kaido24/btgrid":"includes2",
         "testbox":"testbox",
         "coldbox":"tests/resources/app/coldbox"
     },
