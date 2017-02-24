@@ -13,7 +13,7 @@
     "slug":"contentbox-ckeditor-btgrid",
     "shortDescription":"Add btgrid plugin to ckeditor used in ContentBox",
     "description":"Add btgrid plugin to ckeditor used in ContentBox",
-    "type":"modules",
+    "type":"contentbox-modules",
     "dependencies":{
         
     },
