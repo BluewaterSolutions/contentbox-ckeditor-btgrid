@@ -1,0 +1,38 @@
+{
+    "name":"contentbox-ckeditor-btgrid",
+    "version":"0.0.0",
+    "author":"",
+    "location":"BluewaterSolutions/contentbox-ckeditor-btgrid#v0.0.0",
+    "homepage":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
+    "documentation":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid"
+    },
+    "bugs":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid/issues",
+    "slug":"contentbox-ckeditor-btgrid",
+    "shortDescription":"Add btgrid plugin to ckeditor used in ContentBox",
+    "description":"Add btgrid plugin to ckeditor used in ContentBox",
+    "type":"modules",
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='BluewaterSolutions/contentbox-ckeditor-btgrid#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
