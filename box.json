@@ -1,8 +1,8 @@
 {
     "name":"contentbox-ckeditor-btgrid",
-    "version":"0.0.3",
+    "version":"0.0.5",
     "author":"",
-    "location":"BluewaterSolutions/contentbox-ckeditor-btgrid#v0.0.3",
+    "location":"BluewaterSolutions/contentbox-ckeditor-btgrid",
     "homepage":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
     "documentation":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
     "repository":{
