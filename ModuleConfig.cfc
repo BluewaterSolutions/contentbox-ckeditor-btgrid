@@ -2,8 +2,8 @@ component {
     this.title 	= "contentbox-ckeditor-btgrid";
     this.name = "contentbox-ckeditor-btgrid";
     this.author = "";
-    this.description 		= "Add btgrid plugin to ckeditor in ContentBox";
-    this.version			= "1.0.0";
+    this.description 		= "Add btgrid plugin to ckeditor in ContentBox 3.5+";
+    this.version			= "1.1.0";
     this.entryPoint			= "contentbox-ckeditor-btgrid";
     this.webUrl = "https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid";
 
@@ -48,7 +48,7 @@ component {
 		var settingService = controller.getWireBox().getInstance("SettingService@cb");
 
 		// Install the ckeditor plugin
-		var contentboxckeditorbtgridPath = controller.getSetting( "modules" )[ "contentbox-admin" ].path & "/modules/contentbox-ckeditor/includes/ckeditor/plugins/btgrid";
+		var contentboxckeditorbtgridPath = controller.getSetting( "modules" )[ "contentbox-admin" ].path & "/modules/contentbox-admin/modules/contentbox-ckeditor/includes/ckeditor/plugins/btgrid";
 		var fileUtils = controller.getWireBox().getInstance("fileUtils@contentboxckeditorbtgrid");
 		var pluginPath = controller.getSetting("modules")[ "contentbox-ckeditor-btgrid" ].path & "/includes/btgrid";
 		fileUtils.directoryCopy(source=pluginPath, destination=contentboxckeditorbtgridPath);
@@ -68,9 +68,15 @@ component {
 	function onDeactivate(){
 		var settingService = controller.getWireBox().getInstance("SettingService@cb");
 		// Uninstall the ckeditor plugin
-		var contentboxckeditorbtgridPath = controller.getSetting( "modules" )[ "contentbox-admin" ].path & "/modules/contentbox-ckeditor/includes/ckeditor/plugins/btgrid";
+		var contentboxckeditorbtgridPath = controller.getSetting( "modules" )[ "contentbox-admin" ].path & "/modules/contentbox-admin/modules/contentbox-ckeditor/includes/ckeditor/plugins/btgrid";
 		var fileUtils = controller.getWireBox().getInstance("fileUtils@contentboxckeditorbtgrid");
 		var pluginPath = controller.getSetting("modules")["contentbox-ckeditor-btgrid"].path & "/includes/btgrid";
-		fileUtils.directoryRemove(path=contentboxckeditorbtgridPath, recurse=true);
+		try{
+			fileUtils.directoryRemove(path=contentboxckeditorbtgridPath, recurse=true);
+		}
+		catch {
+
+		}
+		
 	}
 }

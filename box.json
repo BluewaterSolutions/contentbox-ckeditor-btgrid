@@ -1,6 +1,6 @@
 {
     "name":"contentbox-ckeditor-btgrid",
-    "version":"0.0.5",
+    "version":"1.1.0",
     "author":"",
     "location":"BluewaterSolutions/contentbox-ckeditor-btgrid",
     "homepage":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid",
@@ -11,7 +11,7 @@
     },
     "bugs":"https://github.com/BluewaterSolutions/contentbox-ckeditor-btgrid/issues",
     "slug":"contentbox-ckeditor-btgrid",
-    "shortDescription":"Add btgrid plugin to ckeditor used in ContentBox",
+    "shortDescription":"Add btgrid plugin to ckeditor used in ContentBox 3.5+",
     "description":"Add btgrid plugin to ckeditor used in ContentBox",
     "type":"contentbox-modules",
     "dependencies":{
